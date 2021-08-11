@@ -1,4 +1,4 @@
-# ClincUI
+# ClinicUI
 
 Simple dental clinic mockup build on Angular v12.
 
