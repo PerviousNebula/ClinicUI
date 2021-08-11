@@ -1,0 +1,33 @@
+.credit-transaction {
+    color: #9287e4;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    border-top: none;
+}
+
+.fa-ellipsis-v {
+    border: none;
+}
+
+i {
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.payment-transaction {
+    color: #6ba6ff;
+}
+
+.refund-transaction {
+    color: #6de1ef;
+}
+
+.transaction-item:hover {
+    cursor: pointer;
+}

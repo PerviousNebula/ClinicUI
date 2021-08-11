@@ -1,0 +1,26 @@
+<div
+  [ngClass]="{'shadow-lg': active}"
+  class="card-container"
+>
+  <div [ngClass]="{'card-info-active': active}" class="card-info-active personal-info position-relative">
+    <img class="card-chip-icon" src="assets/icons/chip.png" alt="chip.png" />
+    <img class="nfc-icon" src="assets/icons/nfc.png" alt="nfc.png" />
+    <div class="personal-info-name">
+      <h6 class="mb-0">NAME</h6>
+      <h5>{{ info.firstName }} {{ info.lastName }}</h5>
+    </div>
+    <div class="card-info">
+      <h6 class="mb-0">NUMBER</h6>
+      <h5>{{ info.accountNumber }}</h5>
+    </div>
+  </div>
+  <div [ngClass]="{'card-balance-active': active}" class="card-balance-active balance-info position-relative">
+    <div class="balance-amount">
+      <h4 class="mb-0">{{ info.balance | currency }}</h4>
+      <h6>Balance</h6>
+    </div>
+    <div class="balance-card-brand">
+      <img class="masterCard-brand-icon" src="assets/icons/masterCard.png" alt="masterCard" />
+    </div>
+  </div>
+</div>

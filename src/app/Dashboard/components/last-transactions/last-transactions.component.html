@@ -1,0 +1,51 @@
+<div
+  *ngIf="transaction"
+  class="row mt-4"
+>
+  <div class="col-6">
+    <span class="text-secondary">{{ transaction.date | date }}</span>
+  </div>
+  <div class="col-6 text-end">
+    <span class="text-secondary" style="margin-right: 1.5rem;">{{ transaction.cashflow | currency }}</span>
+  </div>
+</div>
+<ng-container *ngIf="transaction">
+  <div
+    *ngFor="let tr of transaction.items"
+    class="row mt-4 mb-4 transaction-item"
+    (click)="selectTransaction($event, tr)"
+  >
+    <div class="col-1">
+      <i [class]="tr.icon"></i>
+    </div>
+    <div class="col-4 col-md-3">
+      <h6 class="mt-2">{{ tr.title }}</h6>
+    </div>
+    <div class="col-2 col-md-3 d-none d-md-block">
+      <i
+        [ngClass]="{'credit-transaction': tr.type === 'Credit', 'refund-transaction': tr.type === 'Refund', 'payment-transaction': tr.type === 'Payment'}"
+        class="fas fa-circle"
+      ></i>
+      <span class="ms-3">{{ tr.type }}</span>
+    </div>
+    <div class="col-3 col-md-2">
+      {{ tr.date | date }}
+    </div>
+    <div class="col-1">
+      <h6>{{ tr.total | currency }}</h6>
+    </div>
+    <div class="col-3 col-md-2 text-end">
+      <div class="dropdown">
+        <a class="dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-ellipsis-v text-secondary"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button">Action</button></li>
+          <li><button class="dropdown-item" type="button">Another action</button></li>
+          <li><button class="dropdown-item" type="button">Something else here</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<hr class="text-muted mt-4 mb-4">

@@ -1,0 +1,32 @@
+a.dropdown-toggle {
+    font-size: .8rem;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+i, input, input:focus, input::placeholder {
+    color: #a8a8a8;
+    font-size: .8rem;
+}
+
+.navbar-container {
+    left: 100px;
+    position: absolute;
+}
+
+.notification-bubble {
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.notification-dot {
+    background-color: #50449c;
+    border-radius: 50%;
+    left: 25px;
+    padding: 4px;
+    position: absolute;
+    top: -3px;
+}

@@ -1,0 +1,15 @@
+.inner-container {
+    margin-left: 95px;
+    margin-top: 110px;
+    position: absolute;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}

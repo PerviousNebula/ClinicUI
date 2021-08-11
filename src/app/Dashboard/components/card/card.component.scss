@@ -1,0 +1,93 @@
+.balance-amount {
+    left: 20px;
+    opacity: 0.8;
+    position: absolute;
+    top: 15px;
+}
+
+.balance-info {
+    border-radius: 0 0 15px 15px;
+    height: 30%;
+    width: 100%;
+}
+
+.card-balance-active {
+    background: #513396;
+    color: #FFF;
+}
+
+.card-container {
+    border: 1px solid #dadada;
+    border-radius: 15px;
+    height: 250px;
+    width: 380px;
+}
+
+.card-chip-icon {
+    filter: invert(75%);
+    height: 50px;
+    left: 20px;
+    position: absolute;
+    top: 30px;
+    width: 50px;
+}
+
+.card-container:hover {
+    cursor: pointer;
+}
+
+.card-info {
+    opacity: 0.8;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    top: 105px;
+}
+
+.card-info-active {
+    background: rgb(179,16,210);
+    background: linear-gradient(90deg, rgba(179,16,210,1) 0%, rgba(11,162,193,1) 65%);
+    color: #FFF;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: .6rem;
+}
+
+.masterCard-brand-icon {
+    filter: brightness(0.1) invert(.8);
+    height: 50px;
+    opacity: 0.8;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 55px;
+}
+
+.nfc-icon {
+    filter: invert(75%);
+    height: 30px;
+    opacity: 0.8;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    transform: rotate(90deg);
+    width: 30px;
+}
+
+.personal-info {
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    width: 100%;
+}
+
+.personal-info-name {
+    position: absolute;
+    left: 30px;
+    opacity: 0.8;
+    top: 110px;
+}
