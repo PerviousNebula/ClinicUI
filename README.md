@@ -3,6 +3,7 @@
 Simple dental clinic mockup build on Angular v12.
 
 ## Screenshots
+---
 
 ### Dashboard page
 Here users can see their card latest transactions like refunds, new payment methods added, and more. They can see their prefer credit/debit cards.
